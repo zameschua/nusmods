@@ -5,12 +5,7 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
-  "files": [
-    "dist",
-    "lib",
-    "es",
-    "src"
-  ],
+  "files": ["dist", "lib", "es", "src"],
   "scripts": {
     "clean": "rimraf lib dist es coverage",
     "ci": "npm run lint && npm run test",
@@ -18,12 +13,16 @@
     "docs": "documentation readme src -s \"API\"",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
-    "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack src/index.js dist/nusmoderator.js",
-    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js dist/nusmoderator.min.js",
-    "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
+    "build:umd":
+      "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack src/index.js dist/nusmoderator.js",
+    "build:umd:min":
+      "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js dist/nusmoderator.min.js",
+    "build":
+      "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "test": "cross-env BABEL_ENV=commonjs jest --config .jestconfig --coverage",
     "test:watch": "npm test -- --watch",
-    "prepublishOnly": "npm run clean && npm run check && npm run build && npm run docs --kill --print"
+    "prepublishOnly":
+      "npm run clean && npm run check && npm run build && npm run docs --kill --print"
   },
   "repository": {
     "type": "git",

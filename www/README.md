@@ -2,11 +2,11 @@
 
 **Talk to us!**
 
-- Telegram: https://telegram.me/nusmods
-- Facebook: https://www.facebook.com/nusmods
-- Messenger: https://www.m.me/nusmods
-- Twitter: https://twitter.com/nusmods
-- Email: nusmods@googlegroups.com
+* Telegram: https://telegram.me/nusmods
+* Facebook: https://www.facebook.com/nusmods
+* Messenger: https://www.m.me/nusmods
+* Twitter: https://twitter.com/nusmods
+* Email: nusmods@googlegroups.com
 
 NUSMods R is built using [React][react], [Redux][redux], [Bootstrap][bootstrap] and is designed to be **fast, modern and responsive**.
 
@@ -14,13 +14,13 @@ NUSMods R is built using [React][react], [Redux][redux], [Bootstrap][bootstrap] 
 
 Desktop browsers:
 
-- Last two versions of all evergreen desktop browsers (Chrome, Firefox, Edge, Safari)
-- IE is completely **unsupported**
+* Last two versions of all evergreen desktop browsers (Chrome, Firefox, Edge, Safari)
+* IE is completely **unsupported**
 
 Mobile browsers:
 
-- iOS 9 and above
-- Chrome Mobile last two versions
+* iOS 9 and above
+* Chrome Mobile last two versions
 
 ## Contributing
 
@@ -46,9 +46,9 @@ $ yarn start
 
 This will start webpack dev server, which will automatically rebuild and reload any code and components that you have changed. We recommend the following development tools to help speed up your work
 
-- React Developer Tools ([Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi), [Firefox](https://addons.mozilla.org/firefox/addon/react-devtools/))
-- [Redux DevTools](http://extension.remotedev.io/#installation)
-- [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
+* React Developer Tools ([Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi), [Firefox](https://addons.mozilla.org/firefox/addon/react-devtools/))
+* [Redux DevTools](http://extension.remotedev.io/#installation)
+* [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
 
 ### Writing styles
 
@@ -128,9 +128,9 @@ $ yarn build # Build to staging ./dist directory
 $ yarn promote-staging # Promote ./dist to production
 ```
 
-- `yarn build` packages and optimizes the app for deployment. The files will be placed in the `./dist` directory.
-- `yarn promote-staging` deploys `./dist` to the production folder, currently `../../beta.nusmods.com`. It is designed to be safe, executing a dry run and asking for confirmation before deployment.
-- `yarn rsync <dest-dir>` syncs `./dist` to the specified destination folder `<dest-dir>`. It is mainly used by `yarn promote-staging` but could be used to sync `./dist` to any folder.
+* `yarn build` packages and optimizes the app for deployment. The files will be placed in the `./dist` directory.
+* `yarn promote-staging` deploys `./dist` to the production folder, currently `../../beta.nusmods.com`. It is designed to be safe, executing a dry run and asking for confirmation before deployment.
+* `yarn rsync <dest-dir>` syncs `./dist` to the specified destination folder `<dest-dir>`. It is mainly used by `yarn promote-staging` but could be used to sync `./dist` to any folder.
 
 ## Project Structure
 

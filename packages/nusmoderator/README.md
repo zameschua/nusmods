@@ -21,7 +21,7 @@ If the date is too early (not within supported range), null is returned.
 
 **Parameters**
 
--   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** 
+* `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)**
 
 Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** acadYearObject - { year: "15/16", startDate: Date }
 
@@ -32,12 +32,12 @@ Expects a week number of a year.
 
 **Parameters**
 
--   `acadWeekNumber` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+* `acadWeekNumber` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
 **Examples**
 
 ```javascript
-acadWeekNumber(3)
+acadWeekNumber(3);
 ```
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** semester - "Semester 1"
@@ -49,12 +49,12 @@ Expects a week number of a semester.
 
 **Parameters**
 
--   `acadWeekNumber` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+* `acadWeekNumber` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
 **Examples**
 
 ```javascript
-acadWeekNumber(3)
+acadWeekNumber(3);
 ```
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** semester - "Recess" | "Reading" | "Examination"
@@ -65,7 +65,7 @@ Computes the current academic week and return in an object of acad date componen
 
 **Parameters**
 
--   `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)** 
+* `date` **[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)**
 
 Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** {
 year: "15/16",

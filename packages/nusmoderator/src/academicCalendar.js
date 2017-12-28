@@ -16,13 +16,13 @@ const special1 = 'Special Term I';
 const special2 = 'Special Term II';
 
 /**
-  * Computes the current acad year and return an object of acad year and start date for that year.
-  * If the date is too far into the future (not within supported range),
-  * the last-supported academic year is returned.
-  * If the date is too early (not within supported range), null is returned.
-  * @param  {Date} date
-  * @return {Object} acadYearObject - { year: "15/16", startDate: Date }
-  */
+ * Computes the current acad year and return an object of acad year and start date for that year.
+ * If the date is too far into the future (not within supported range),
+ * the last-supported academic year is returned.
+ * If the date is too early (not within supported range), null is returned.
+ * @param  {Date} date
+ * @return {Object} acadYearObject - { year: "15/16", startDate: Date }
+ */
 export function getAcadYear(date) {
   const years = Object.keys(acadYearStartDates);
   years.sort().reverse();
@@ -40,12 +40,12 @@ export function getAcadYear(date) {
 }
 
 /**
-  * Computes the current academic semester.
-  * Expects a week number of a year.
-  * @param  {Number} acadWeekNumber
-  * @return {String} semester - "Semester 1"
-  * @example acadWeekNumber(3)
-  */
+ * Computes the current academic semester.
+ * Expects a week number of a year.
+ * @param  {Number} acadWeekNumber
+ * @return {String} semester - "Semester 1"
+ * @example acadWeekNumber(3)
+ */
 export function getAcadSem(acadWeekNumber) {
   const earliestSupportedWeek = 1;
   const lastWeekofSem1 = 23;
@@ -68,12 +68,12 @@ export function getAcadSem(acadWeekNumber) {
 }
 
 /**
-  * Computes the current academic week of the semester
-  * Expects a week number of a semester.
-  * @param  {Number} acadWeekNumber
-  * @return {String} semester - "Recess" | "Reading" | "Examination"
-  * @example acadWeekNumber(3)
-  */
+ * Computes the current academic week of the semester
+ * Expects a week number of a semester.
+ * @param  {Number} acadWeekNumber
+ * @return {String} semester - "Recess" | "Reading" | "Examination"
+ * @example acadWeekNumber(3)
+ */
 export function getAcadWeekName(acadWeekNumber) {
   switch (acadWeekNumber) {
     case 7:
@@ -92,23 +92,23 @@ export function getAcadWeekName(acadWeekNumber) {
         weekType: 'Examination',
         weekNumber: acadWeekNumber - 15,
       };
-    default:
-      {
-        let weekNumber = acadWeekNumber;
-        if (weekNumber >= 8) { // For weeks after recess week
-          weekNumber -= 1;
-        }
-
-        if (acadWeekNumber < 1 || acadWeekNumber > 17) {
-          console.warn(`[nusmoderator] Unsupported acadWeekNumber as parameter: ${acadWeekNumber}`);
-          return null;
-        }
-
-        return {
-          weekType: 'Instructional',
-          weekNumber,
-        };
+    default: {
+      let weekNumber = acadWeekNumber;
+      if (weekNumber >= 8) {
+        // For weeks after recess week
+        weekNumber -= 1;
       }
+
+      if (acadWeekNumber < 1 || acadWeekNumber > 17) {
+        console.warn(`[nusmoderator] Unsupported acadWeekNumber as parameter: ${acadWeekNumber}`);
+        return null;
+      }
+
+      return {
+        weekType: 'Instructional',
+        weekNumber,
+      };
+    }
   }
 }
 
@@ -127,7 +127,9 @@ export function getAcadWeekInfo(date) {
   const acadYear = currentAcad.year;
   const acadYearStartDate = currentAcad.startDate;
 
-  let acadWeekNumber = Math.ceil(((date.getTime() - acadYearStartDate.getTime()) + 1) / oneWeekDuration);
+  let acadWeekNumber = Math.ceil(
+    (date.getTime() - acadYearStartDate.getTime() + 1) / oneWeekDuration,
+  );
   const semester = getAcadSem(acadWeekNumber);
 
   let weekType = null;

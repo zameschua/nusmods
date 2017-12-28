@@ -2,11 +2,7 @@
   "name": "nusmods",
   "description": "NUSMods",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "www",
-    "api"
-  ],
+  "workspaces": ["packages/*", "www", "api"],
   "scripts": {
     "lint": "eslint '**/*.{js,jsx}'",
     "prettier": "prettier '**/*.{js,jsx,json,scss,md,graph}' '!**/flow-typed/**'"

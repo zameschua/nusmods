@@ -4,19 +4,19 @@
 
 Help contribute to the next version of NUSMods!
 
-- Latest build: https://latest.nusmods.com/
-- Getting Started: https://github.com/nusmodifications/nusmods/tree/master/www
-- Issues: https://github.com/nusmodifications/nusmods/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22NUSMods+R%22
+* Latest build: https://latest.nusmods.com/
+* Getting Started: https://github.com/nusmodifications/nusmods/tree/master/www
+* Issues: https://github.com/nusmodifications/nusmods/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22NUSMods+R%22
 
 For V2's documentation on installation, refer [here](provisioning/README.md).
 
 ## Talk to us!
 
-- Telegram: https://telegram.me/nusmods
-- Facebook: https://www.facebook.com/nusmods
-- Messenger: https://www.m.me/nusmods
-- Twitter: https://twitter.com/nusmods
-- Email: nusmods@googlegroups.com
+* Telegram: https://telegram.me/nusmods
+* Facebook: https://www.facebook.com/nusmods
+* Messenger: https://www.m.me/nusmods
+* Twitter: https://twitter.com/nusmods
+* Email: nusmods@googlegroups.com
 
 ## License
 

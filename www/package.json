@@ -9,7 +9,8 @@
     "promote-staging": "bash scripts/promote-staging.sh",
     "postinstall": "flow-scripts stub",
     "flow": "flow check",
-    "lint": "npm run lint:src && npm run flow && npm run lint:test && npm run lint:scripts && npm run lint:styles",
+    "lint":
+      "npm run lint:src && npm run flow && npm run lint:test && npm run lint:scripts && npm run lint:styles",
     "lint:src": "eslint 'src/js/**/!(*.test).{js,jsx}' --cache",
     "lint:test": "cross-env BABEL_ENV=test eslint __tests__ 'src/js/**/*.test.{js,jsx}' --cache",
     "lint:scripts": "eslint webpack scripts --cache",
@@ -17,7 +18,8 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "cors": "node scripts/cors-crawler",
-    "ci": "cross-env NODE_ENV=production npm run lint && npm test && npm rebuild node-sass && npm run build"
+    "ci":
+      "cross-env NODE_ENV=production npm run lint && npm test && npm rebuild node-sass && npm run build"
   },
   "author": "NUSModifications",
   "license": "MIT",
@@ -122,10 +124,5 @@
     "redux-thunk": "^2.2.0",
     "rmwc": "^0.0.1-rc11"
   },
-  "browserslist": [
-    "last 2 versions",
-    "iOS >= 9",
-    "Safari >= 9",
-    "not ie <= 11"
-  ]
+  "browserslist": ["last 2 versions", "iOS >= 9", "Safari >= 9", "not ie <= 11"]
 }

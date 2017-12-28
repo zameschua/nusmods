@@ -41,7 +41,8 @@ $icon-dist: $input-width-open - $input-width;
   border: 0;
   background: transparent;
   transform: translate($input-width-open);
-  transition: transform $desktop-entering-duration $material-deceleration-curve, opacity $desktop-entering-duration $material-deceleration-curve 75ms;
+  transition: transform $desktop-entering-duration $material-deceleration-curve,
+    opacity $desktop-entering-duration $material-deceleration-curve 75ms;
 
   &:focus {
     background: transparent;
