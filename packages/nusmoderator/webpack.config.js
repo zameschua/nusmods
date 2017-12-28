@@ -1,5 +1,3 @@
-'use strict';
-
 const webpack = require('webpack');
 
 const env = process.env.NODE_ENV;
