@@ -2,13 +2,18 @@
   "name": "nusmods",
   "description": "NUSMods",
   "private": true,
-  "workspaces": ["packages/*", "www", "api"],
+  "workspaces": [
+    "www",
+    "api",
+    "packages/*"
+  ],
   "scripts": {
     "lint": "eslint '**/*.{js,jsx}'",
     "prettier": "prettier '**/*.{js,jsx,json,scss,md,graph}' '!**/flow-typed/**'"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
+    "eslint": "^4.8.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-flowtype": "^2.40.1",
